@@ -72,7 +72,9 @@ public class Qes1_13 {
 		
 		//問７
 		
-		System.out.println("「BMIは" + f / ((d / 100) * (d / 100)) + "です」");
+		double num2 = f / ((d / 100) * (d / 100));
+		
+		System.out.println("「BMIは" + Math.round(num2) + "です」");
 		
 		//問８
 		
@@ -81,23 +83,8 @@ public class Qes1_13 {
 		d = 168.5;
 		f = 64.2f;
 		String s4= "オムライス";
-		double num2 = f / ((d / 100) * (d / 100));
-		double num3 = ((double)Math.round(num2 * 10))/10;
-		
-		System.out.println("「初めまして" + s3 + "です」");
-		System.out.println("「年齢は" + i + "歳です」");
-		System.out.println("「身長は" + d + "cmです」");
-		System.out.println("「体重は" + f + "kgです」");
-		System.out.println("「好きな食べ物は" + s4 + "です」");
-		System.out.println("「BMIは" + num3 + "です」");
-		
-		//問９
-		
-		i = i + i;
-		d = d + d;
-		f = f + f;
 		double num4 = f / ((d / 100) * (d / 100));
-		double num5 = ((double)Math.round(num4 * 100))/100;
+		double num5 = ((double)Math.round(num4 * 10))/10;
 		
 		System.out.println("「初めまして" + s3 + "です」");
 		System.out.println("「年齢は" + i + "歳です」");
@@ -106,13 +93,32 @@ public class Qes1_13 {
 		System.out.println("「好きな食べ物は" + s4 + "です」");
 		System.out.println("「BMIは" + num5 + "です」");
 		
+		//問９
+		
+		i = i + i;
+		d = d + d;
+		f = f + f;
+		double num6 = f / ((d / 100) * (d / 100));
+		double num7 = ((double)Math.round(num6 * 100))/100;
+		
+		System.out.println("「初めまして" + s3 + "です」");
+		System.out.println("「年齢は" + i + "歳です」");
+		System.out.println("「身長は" + d + "cmです」");
+		System.out.println("「体重は" + f + "kgです」");
+		System.out.println("「好きな食べ物は" + s4 + "です」");
+		System.out.println("「BMIは" + num7 + "です」");
+		
 		//問１０
 		
+		i = 24;
 		boo =  (i >= 25); 
 		
 		System.out.println(boo);
 		
 		//問１１
+		
+		d = 168.5;
+		f = 64.2f;
 		
 		String istr = String.valueOf(i);
 		String dstr = String.valueOf(d);
@@ -134,12 +140,6 @@ public class Qes1_13 {
 		boo =  (iint == 25 || dint >= 160);
 		
 		System.out.println(boo);
-		
-		//確認テスト
-		
-		float ans = 7 / 6;
-		System.out.println(ans);
-		
 	}
 
 }
